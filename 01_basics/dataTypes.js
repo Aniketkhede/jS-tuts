@@ -9,4 +9,8 @@
 //boolean
 //undefined => type is undefined
 //null => type is object and it is standalone value
-//symbol => uniq
+//symbol => unique
+
+//object
+console.log(typeof undefined);
+console.log(typeof null);
