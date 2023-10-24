@@ -11,3 +11,5 @@
 
 // phase 1 => Global Execution 
 // phase 2 => Memory Phase
+
+// functionDefinition=>newContext=>newVariableEnvironment+ExecutionThread
