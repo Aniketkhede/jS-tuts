@@ -7,10 +7,16 @@ const Obj = [{
     d:"dog"
 }]
 
-const arr = Object.entries(Obj).map(([key,value])=>{
-    return 
-})
-const tr = Object.assign({},...arr)
+// const arr = Object.entries(Obj).map(([key,value])=>{
+//     return value
+// })
+// const tr = Object.assign({},...arr)
 
-console.log(arr);
-console.log(tr);
+// console.log(arr);
+// console.log(tr);
+
+const Total = nums.reduce((acc,currVal)=>{
+    return acc+currVal;
+},0)
+
+console.log(Total);
