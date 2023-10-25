@@ -11,7 +11,7 @@
     </ul>
 </body>
 <script>
-
+    //create and add element
     function addLang(langName){
         const li = document.createElement('li');
         li.innerHTML =`${langName}`;
@@ -23,7 +23,34 @@
         document.querySelector('.language').appendChild(li)
     }
     addLangOptimally("ruby");
+    addLangOptimally("golang")
+    addLangOptimally("type-Script")
     addLang("python");
+
+
+    //Edit 
+    const secondLan = document.querySelector('li:nth-child(2)');
+    //console.log(secondLan)
+    // secondLan.innerHTML="xyz";
+    const li = document.createElement('li');
+    li.textContent="xyz"
+    secondLan.replaceWith(li);
+
+    //edit returns
+    
+    const secondLanReturns = document.querySelector('li:nth-child(2)');
+    secondLanReturns.outerHTML = '<li>ruby</li>'
+
+    addLangOptimally("aniket")
+
+    //remove
+    // document.getElementsByClassName('language').l
+    const lastChild = document.querySelector('li:last-child');
+    lastChild.remove()
+
+
+
+
 
 </script>
 </html>
