@@ -7,6 +7,7 @@
 </head>
 <body  style= "background-color: #212121; color: white">
     <div class="parent"  >
+        <p>aniket is a good person </p>
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>          
         <div class="day">Wednesday</div>
@@ -15,8 +16,14 @@
 </body>
 <script>
     const pa =document.querySelector('.parent')
+    const elem = document.createElement('div');
+    elem.innerHTML= "my name is aniket"
     
-    console.log(typeof pa)
-    
+    pa.appendChild(elem)
+    console.log(pa.firstElementChild)
+    console.log(pa.lastChild)
+    console.log(pa.childNodes)
+    pa.lastElementChild.setAttribute("class","day")
+
 </script>
 </html>
